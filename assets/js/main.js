@@ -30,7 +30,7 @@ fetch(fetchUrl)
                     <h3>${product.title}</h3>
                     </div>
                 <div class="product-info">
-                    <p>Price: <span id="price">${product.price}</span></p>
+                    <p>Price: <span id="price">${product.price}</span> EUR</p>
                     <button>Add to cart</button>
                 </div>
             </div>
