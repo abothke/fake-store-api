@@ -4,6 +4,7 @@ fetch('https://fakestoreapi.com/products')
         console.log(data);
         const products = data;
         const productContainer = document.createElement("div");
+        productContainer.classList.add("products");
         products.forEach((product) => {
             productContainer.innerHTML += `
             <div class="product">
@@ -18,6 +19,5 @@ fetch('https://fakestoreapi.com/products')
             </div>
             `;
         });
-        document.body.appendChild(productContainer);
-
+        document.querySelector("main").appendChild(productContainer);
     });
