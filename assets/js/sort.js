@@ -17,3 +17,5 @@ const sortBy = () => {
         product.style.order = order;
     });
 }
+
+document.querySelector("#sort").addEventListener("change", sortBy)

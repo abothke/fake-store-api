@@ -1,9 +1,24 @@
 import { liveSearch } from "./livesearch.js";
 import { sortBy } from "./sort.js";
-fetch('https://fakestoreapi.com/products')
+let fetchUrl
+
+const fetchProducts = (category) => {
+    console.log(category)
+if (category == "all"){
+    fetchUrl = "https://fakestoreapi.com/products"
+} else if (category == "electronics") {
+    fetchUrl = "https://fakestoreapi.com/products/category/electronics"
+} else if (category == "jewelery"){
+    fetchUrl = "https://fakestoreapi.com/products/category/jewelery"
+} else if (category == "mens-clothing"){
+    fetchUrl = "https://fakestoreapi.com/products/category/men's%20clothing"
+} else if (category == "womens-clothing"){
+    fetchUrl = "https://fakestoreapi.com/products/category/women's%20clothing"
+}
+fetch(fetchUrl)
     .then((response) => response.json())
     .then((data) => {
-        console.log(data);
+        document.querySelector("main").innerHTML = "";
         const products = data;
         const productContainer = document.createElement("div");
         productContainer.classList.add("products");
@@ -23,6 +38,12 @@ fetch('https://fakestoreapi.com/products')
         });
         document.querySelector("main").appendChild(productContainer);
     });
+}
+    fetchProducts("all")
+    
+    
 
-    document.querySelector("#search-bar").addEventListener("keyup", liveSearch);
-    document.querySelector("#sort").addEventListener("change", sortBy)
+    document.querySelector("#electronics").addEventListener("click", () => fetchProducts("electronics"))
+    document.querySelector("#jewelery").addEventListener("click", () => fetchProducts("jewelery"))
+    document.querySelector("#mens-clothing").addEventListener("click", () => fetchProducts("mens-clothing"))
+    document.querySelector("#womens-clothing").addEventListener("click", () => fetchProducts("womens-clothing"))

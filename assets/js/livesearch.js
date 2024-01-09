@@ -1,8 +1,7 @@
 export { liveSearch };
 
 const liveSearch = () =>{
-    let searchInput = document.querySelector("#sort").value;
-    console.log(searchInput);
+    let searchInput = document.querySelector("#search-bar").value;
     let products = document.querySelectorAll(".products .product");
     products.forEach((product) => {
         let productTitle = product.querySelector("h3").innerText.toLowerCase();
@@ -13,3 +12,5 @@ const liveSearch = () =>{
         }
     });
 }
+
+document.querySelector("#search-bar").addEventListener("keyup", liveSearch)

@@ -7,17 +7,18 @@
 body{
     font-family: 'Poppins', sans-serif;
     background: #fafafa;
+    color: white;
 }
 
 header{
-    background: #fff;
+    background: #7306F0;
     padding: 20px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: 4px solid #eee;
     gap: 2em;
-    flex-direction: column;
+    flex-direction: column;+
 }
 
 .second-row-header{
@@ -56,4 +57,17 @@ header{
     flex-direction: column;
     justify-content: space-between;
     margin: 25px;
+    color: #7306F0;
+    
+}
+header button{
+    background: white;
+    color: #7306F0;
+}
+button{
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    background: #7306F0;
+    color: white;
 }
