@@ -1,51 +1,61 @@
-# Movie Database JS
+## Fake-Store-API
 
-## English
-
-This project is a simple movie database, implemented in JavaScript. It allows users to browse through a list of movies, view details about individual movies, and search for movies by title.
-
-### Features
-
-- Browse through a list of movies
-- View detailed information about each movie
-- Search for movies by title
-
-### Sorting Features
-
-Users can also sort the movies based on the following criteria:
-
-- Name (A-Z)
-- Best rating
-- Year (ascending and descending)
-
-## Deutsch
-
-Dieses Projekt ist eine einfache Filmdatenbank, implementiert in JavaScript. Es ermöglicht Benutzern, durch eine Liste von Filmen zu blättern, Details zu einzelnen Filmen anzusehen und nach Filmen nach Titel zu suchen.
-
-### Funktionen
-
-- Durch eine Liste von Filmen blättern
-- Detaillierte Informationen zu jedem Film anzeigen
-- Suche nach Filmen nach Titel
-
-### Sortierfunktionen
-
-Benutzer können die Filme auch nach den folgenden Kriterien sortieren:
-
-- Name (A-Z)
-- Bestes Rating
-- Jahr (aufsteigend und absteigend)
+## 🇩🇪 Deutsch
 
 ## Demo
 
-https://abothke.github.io/movie-database-js/
+https://abothke.github.io/fake-store-api/
 
-# Hi, I'm Andre! 👋
+## Hallo, ich bin Andre! 👋
 
-## 🚀 About me
+### 🚀 Über mich
 
-On the road to be a full stack developer...
+Auf dem Weg, ein Full-Stack-Entwickler zu werden...
 
-## Authors
+## 🛠️ Verwendete Technologien
+
+Dieses Projekt verwendet die folgenden Technologien:
+
+- HTML5
+- CSS3
+- JavaScript
+- Fake Store API
+
+## 📝 Funktionen
+
+- Anzeige einer Liste von Produkten aus der API
+- Suchen innerhalb der Ergebnisse nach Titel (mit einer Live-Suche)
+- Sortierung nach Preis (Teuer -> Günstig, Günstig -> Teuer)
+- Anzeigen von Produkten aus Kategorien
+
+## 🇬🇧 English
+
+## Demo
+
+https://abothke.github.io/fake-store-api/
+
+## Hi, I'm Andre! 👋
+
+### 🚀 About me
+
+On the road to becoming a full-stack developer...
+
+## 🛠️ Technologies Used
+
+This project uses the following technologies:
+
+- HTML5
+- CSS3
+- JavaScript
+- Fake Store API
+
+## 📝 Features
+
+- Display a list of products from the API
+- Search within the results by title (with a live search)
+- Sort by price (Expensive -> Cheap, Cheap -> Expensive)
+- Display products from categories
+
+## Autoren / Authors
 
 - [@abothke](https://www.github.com/abothke)
