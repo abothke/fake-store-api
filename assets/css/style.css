@@ -14,6 +14,8 @@ a{
 }
 body {
     color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -81,14 +83,15 @@ span {
 }
 
 .product-image img {
-    height: 150px;
-    max-width: 150px;
-    width: auto;
+    border-radius: 5px;
+    height: 300px;
+    width: 300px;
+    size: fit-content;
 }
 
 .products {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     text-align: center;
 }
 
@@ -99,10 +102,10 @@ span {
     color: #7306F0;
     display: flex;
     flex-direction: column;
-    height: 400px;
+    height: 500px;
     justify-content: space-between;
     margin: 25px;
-    max-width: 300px;
+    max-width: 350px;
     padding: 20px;
     transition: transform 0.3s ease-in-out;
 }
