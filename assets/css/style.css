@@ -57,6 +57,9 @@ input {
     width: 100%;
 }
 
+main{
+    background: #eee;
+}
 select {
     border-radius: 5px;
     margin-bottom: 10px;
@@ -91,7 +94,7 @@ span {
 
 .products {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     text-align: center;
 }
 
