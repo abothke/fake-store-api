@@ -9,8 +9,10 @@ const sortBy = () => {
         let productPrice = parseFloat(product.querySelector("#price").innerText).toFixed(0);
         if (sortInput == "low") {
             order = productPrice;
-        } else {
+        } else if (sortInput == "high") {
             order = -productPrice;
+        } else {
+            order = 0;
         }
         product.style.order = order;
     });
