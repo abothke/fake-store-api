@@ -21,3 +21,18 @@ fetch('https://fakestoreapi.com/products')
         });
         document.querySelector("main").appendChild(productContainer);
     });
+
+    const liveSearch = () =>{
+        let searchInput = document.querySelector("#search-bar").value.toLowerCase();
+        let products = document.querySelectorAll(".products .product");
+        products.forEach((product) => {
+            let productTitle = product.querySelector("h3").innerText.toLowerCase();
+            if(productTitle.includes(searchInput)){
+                product.style.display = "none";
+            }else{
+                product.style.display = "block";
+            }
+        });
+    } 
+    
+    document.querySelector("#search-bar").addEventListener("keyup", liveSearch);
