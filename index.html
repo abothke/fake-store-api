@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+        <!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -7,6 +7,27 @@
         <title>fake-store-api</title>
     </head>
     <body>
+        <header>
+            <h1>Fake Store API</h1>
+            <div class="search-container">
+                <input type="text" placeholder="Search for a title" id="search-bar">
+                <select name="sort" id="sort">
+                    <option value="low">Price low to high</option>
+                    <option value="high">Price high to low</option>
+                </select>
+            </div>
+            <div id="second-row-header" class="second-row-header">
+            <p>Filter by categories</p>
+            <button id="electronics">Electronics</button>
+            <button id="jewelery">Jewelery</button>
+            <button id="mens-clothing">Men's Clothing</button>
+            <button id="womens-clothing">Women's Clothing</button>
+        </div>
+        </header>
+        <main>
+            <div class="container" id="container">
+            </div>
+        </main>
     <script src="./assets/js/main.js"></script>
     </body>
     </html>
